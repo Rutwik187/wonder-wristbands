@@ -11,8 +11,17 @@
   "dependencies": {
     "@headlessui/react": "^1.7.13",
     "@heroicons/react": "^2.0.17",
+    "@portabletext/react": "^2.0.2",
+    "@sanity/client": "^5.4.2",
+    "@sanity/image-url": "^1.0.2",
+    "flowbite": "^1.6.5",
+    "flowbite-react": "^0.4.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-portable-text": "^0.6.0",
+    "react-router-dom": "^6.10.0",
+    "react-router-hash-link": "^2.4.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

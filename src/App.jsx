@@ -1,24 +1,24 @@
 import React from "react";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import Numbers from "./components/Numbers";
-import ContactUs from "./components/ContactUs";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import AllBlogs from "./pages/AllBlogs";
+import Home from "./pages/Home";
+import BlogPage from "./pages/BlogPage";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Testimonials from "./components/Testimonials";
-import AboutUs from "./components/AboutUs";
-import Blogs from "./components/Blogs";
 
 const App = () => {
   return (
     <div className="bg-[#F8F4EB]">
-      <Hero />
-      <Features />
-      <AboutUs />
-      <Numbers />
-      <Blogs />
-      <Testimonials />
-      <ContactUs />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blogs" element={<AllBlogs />} />
+          <Route path="/blogs/:slug" element={<BlogPage />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 };
