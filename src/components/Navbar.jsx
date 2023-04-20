@@ -165,11 +165,11 @@ export default function Navbar() {
                       </Link>
 
                       <Link
-                        to="/gallery"
+                        to="/blogs"
                         className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
                         aria-current="page"
                       >
-                        Gallery
+                        Blogs
                       </Link>
                       <Link
                         to="/"
