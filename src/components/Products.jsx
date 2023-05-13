@@ -8,9 +8,9 @@ const Products = () => {
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h3 className="text-[#5E0000] text-3xl font-semibold sm:text-4xl">
-            Products
+            Products We Make
           </h3>
-          <p className="mt-3">Here are some products we make.</p>
+          <p className="mt-3">Experience the best, every time.</p>
         </div>
         <div className="flex flex-wrap gap-6 align-middle justify-around">
           {productsData.map((item, index) => (
