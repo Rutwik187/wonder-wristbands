@@ -6,7 +6,7 @@ const AllBlogs = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "post"]';
+    const query = '*[_type == "post"] | order(_createdAt desc)';
 
     client.fetch(query).then((data) => {
       setPosts(data);

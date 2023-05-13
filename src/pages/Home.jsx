@@ -8,6 +8,8 @@ import Testimonials from "../components/Testimonials";
 import AboutUs from "../components/AboutUs";
 import Blogs from "../components/Blogs";
 
+import Products from "../components/Products";
+
 const Home = () => {
   return (
     <div>
@@ -15,6 +17,7 @@ const Home = () => {
       <Features />
       <AboutUs />
       <Numbers />
+      <Products />
       <Blogs />
       <Testimonials />
       <ContactUs />

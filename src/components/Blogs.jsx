@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { urlFor, client } from "../client";
+import { Link } from "react-router-dom";
 
 const Blogs = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "post"] | order(_createdAt desc)';
+
+    client.fetch(query).then((data) => {
+      setPosts(data);
+    });
+  }, []);
   return (
     <section>
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
