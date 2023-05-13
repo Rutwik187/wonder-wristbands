@@ -24,13 +24,6 @@ const AllBlogs = () => {
             />
 
             <div className="flex flex-col p-6 col-span-full row-span-full lg:col-span-8 lg:p-10">
-              {/* <div className="flex justify-start">
-                {item.categories.map((item, index) => (
-                  <span key={index} className="px-2 py-1 text-xs rounded-full ">
-                    {item.category}
-                  </span>
-                ))}
-              </div> */}
               <h1 className="text-3xl font-semibold">{item.title}</h1>
               <p className="flex-1 pt-2">{item.metaData}</p>
 

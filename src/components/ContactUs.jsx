@@ -7,7 +7,7 @@ export default () => {
   ];
 
   return (
-    <main className="flex overflow-hidden">
+    <main className="flex overflow-hidden" id="contact-us">
       <div className="flex-1 hidden lg:block">
         <img
           src="https://res.cloudinary.com/floatui/image/upload/v1670701901/scott-webb-NQymDb5XqC4-unsplash_ezrolm.jpg"

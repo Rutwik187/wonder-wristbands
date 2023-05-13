@@ -4,7 +4,7 @@ import productsData from "../data";
 
 const Products = () => {
   return (
-    <section className="py-14">
+    <section className="py-14" id="products">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h3 className="text-[#5E0000] text-3xl font-semibold sm:text-4xl">

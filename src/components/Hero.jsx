@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/wristBandLogo.png";
 import identificationBand from "../assets/identificationBandHero.png";
+import { HashLink } from "react-router-hash-link";
 export default () => {
   const features = [
     {
@@ -83,14 +84,16 @@ export default () => {
               wristbands for all your identification needs.
             </p>
             <div className="items-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
-              <a
-                href="javascript:void(0)"
+              <HashLink
+                smooth
+                to="/#products"
                 className="block py-2 px-4 text-center text-white font-medium bg-[#FF6B66] duration-150 hover:bg-[#FE5650] active:bg-[#FF0800] rounded-lg shadow-lg hover:shadow-none"
               >
                 Buy Now
-              </a>
-              <a
-                href="javascript:void(0)"
+              </HashLink>
+              <HashLink
+                smooth
+                to="/#contact-us"
                 className="flex items-center justify-center gap-x-2 py-2 px-4 text-gray-700 hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg md:inline-flex"
               >
                 Contact Us
@@ -106,7 +109,7 @@ export default () => {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </HashLink>
             </div>
           </div>
           <div className="flex-none mt-14 md:mt-0 md:max-w-xl">
