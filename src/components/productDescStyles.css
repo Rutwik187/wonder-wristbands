@@ -39,6 +39,9 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .image-container {
+    width: auto;
+  }
   .product-detail-container {
     flex-wrap: wrap;
   }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./globalStyles.css";
+import "./productDescStyles.css";
 import productsData from "../data";
 import { useParams } from "react-router-dom";
 
@@ -10,7 +10,7 @@ const ProductDetails = () => {
 
   return (
     <>
-      <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
+      <div className="max-w-screen-xl mx-auto px-0  text-gray-600 md:px-8">
         <div className="product-detail-container">
           <div>
             <div className="image-container">
