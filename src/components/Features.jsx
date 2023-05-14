@@ -68,11 +68,10 @@ export default () => {
         <div className="max-w-xl space-y-3">
           <h3 className="text-[#FF6B66] font-semibold">Features</h3>
           <p className="text-[#5E0000] text-3xl font-semibold sm:text-4xl">
-            Do more with less complexity
+            Elevate Your Experience!
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            congue, nisl eget molestie varius
+            Unleash the Power of Innovation: Discover Our Cutting-Edge Features!
           </p>
         </div>
         <div className="mt-12">

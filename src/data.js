@@ -27,7 +27,7 @@ const productsData = [
     }, {
         productId: 1,
         name: 'MUAC Tape ',
-        desc: 'MJM Prints offers high- quality, NABH - compliant patient identity bands and tags in various colors.They are made from durable synthetic and polypropylene materials and come in lengths of 20 cm and 10 inches.The secure closure design ensures they stay in place.Sold in packs of 100, these bands are essential for accurate patient identification in healthcare facilities.Choose MJM Prints for your patient identification needs.',
+        desc: 'Our MUAC tapes are crucial tools for healthcare professionals to measure mid-upper arm circumference accurately. They aid in evaluating the nutritional status and health of children under five, predicting malnutrition and other issues. Portable and user-friendly, our tapes can be customized with logos or colors. We provide excellent customer support and meet the needs of medical experts in India and beyond.',
         images: [muacProduct1, muacProduct2, muacProduct3, muacProduct4]
     }, {
         productId: 2,

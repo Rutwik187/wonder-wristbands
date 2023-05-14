@@ -1,33 +1,8 @@
 import logo from "../assets/wristBandLogo.png";
+import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
+import NavbarDropdown from "./NavbarDropdown";
 export default () => {
-  const footerNavs = [
-    {
-      href: "javascript:void()",
-      name: "Home",
-    },
-    {
-      href: "javascript:void()",
-      name: "About Us",
-    },
-    {
-      href: "javascript:void()",
-      name: "Blogs",
-    },
-    {
-      href: "javascript:void()",
-      name: "Contact Us",
-    },
-    {
-      href: "javascript:void()",
-      name: "Careers",
-    },
-
-    {
-      href: "javascript:void()",
-      name: "Suuport",
-    },
-  ];
-
   return (
     <footer className="mt-16 text-gray-500 bg-white px-4 py-5  mx-auto md:px-8">
       <div className="max-w-lg sm:mx-auto sm:text-center">
@@ -40,13 +15,46 @@ export default () => {
         </p>
       </div>
       <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
-        {footerNavs.map((item, idx) => (
-          <li className=" hover:text-[#5E0000]">
-            <a key={idx} href={item.href}>
-              {item.name}
-            </a>
-          </li>
-        ))}
+        <li className=" hover:text-[#5E0000]">
+          <Link
+            to="/"
+            className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0"
+            aria-current="page"
+          >
+            Home
+          </Link>
+        </li>
+        <li>
+          <NavbarDropdown />
+        </li>
+        <li className=" hover:text-[#5E0000]">
+          <Link
+            to="/about-us"
+            className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
+            aria-current="page"
+          >
+            About-Us
+          </Link>
+        </li>
+        <li className=" hover:text-[#5E0000]">
+          <Link
+            to="/blogs"
+            className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
+            aria-current="page"
+          >
+            Blogs
+          </Link>
+        </li>
+        <li className=" hover:text-[#5E0000]">
+          <NavHashLink
+            smooth
+            to="/#contact-us"
+            className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
+            aria-current="page"
+          >
+            Contact Us
+          </NavHashLink>
+        </li>
       </ul>
       <div className="mt-8 items-center justify-between sm:flex">
         <div className="mt-4 sm:mt-0">
