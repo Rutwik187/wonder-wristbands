@@ -32,7 +32,7 @@ const productsData = [
     }, {
         productId: 2,
         name: 'Head Circumference Tape ',
-        desc: 'MJM Prints offers high- quality, NABH - compliant patient identity bands and tags in various colors.They are made from durable synthetic and polypropylene materials and come in lengths of 20 cm and 10 inches.The secure closure design ensures they stay in place.Sold in packs of 100, these bands are essential for accurate patient identification in healthcare facilities.Choose MJM Prints for your patient identification needs.',
+        desc: 'MJM Prints offers high- quality head circumference tapes for newborns and young children.Made from safe and flexible materials, our tapes prioritize safety and comfort.They provide precise measurements and are suitable for medical professionals, pediatricians, and parents.We offer various sizes and customization options for branding.At MJM Prints, we are dedicated to providing reliable and accurate medical supplies, including our head circumference tapes.',
         images: [headCircumferenceTape1, headCircumferenceTape2, headCircumferenceTape3, headCircumferenceTape4]
     }, {
         productId: 3,

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import aboutUs from "../assets/about-us.jpg";
 export default () => {
   return (
@@ -10,20 +11,17 @@ export default () => {
             Welcome to <span className="text-[#FF6B66]">Wonder WristBand</span>
           </h3>
           <p className="text-gray-500 leading-relaxed mt-2">
-            Nam erat risus, sodales sit amet lobortis ut, finibus eget metus.
-            Cras aliquam ante ut tortor posuere feugiat. Duis sodales nisi id
-            porta lacinia.
-            <br />
-            Nam erat risus, sodales sit amet lobortis ut, finibus eget metus.
-            Cras aliquam ante ut tortor posuere feugiat. Duis sodales nisi id
-            porta lacinia.
+            Welcome to MJM Prints, your one-stop shop for all your printing
+            needs. We are a group of passionate, committed professionals with
+            years of experience in the printing business. Our goal is to offer
+            our customers high-quality printing services at a competitive price.
           </p>
-          <a
-            href="javascript:void(0)"
+          <Link
+            to="/about-us"
             className="w-fit my-6 py-2 px-4 text-center text-white font-medium bg-[#FF6B66] duration-150 hover:bg-[#FE5650] active:bg-[#FF0800] rounded-lg shadow-lg hover:shadow-none"
           >
             Know More
-          </a>
+          </Link>
         </div>
         <div className="flex-1 rounded-md mt-5 mx-auto sm:w-9/12 lg:mt-0 lg:w-auto">
           <img src={aboutUs} alt="" className="w-full rounded-md" />

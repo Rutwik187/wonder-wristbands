@@ -1,25 +1,28 @@
+import avatar1 from "../assets/testimonial-avatar1.png";
+import avatar2 from "../assets/testimonial-avatar2.png";
+import avatar3 from "../assets/testimonial-avatar4.png";
 export default () => {
   const testimonials = [
     {
-      avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
-      name: "Martin escobar",
-      title: "Founder of meta",
+      avatar: avatar1,
+      name: "Manoj P.",
+      title: "Happy Customer",
       quote:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae.",
+        "Impressed with the quality and ease of use. These identification bands are a game-changer!",
     },
     {
-      avatar: "https://randomuser.me/api/portraits/men/46.jpg",
-      name: "Simon andrew",
-      title: "Software engineer",
+      avatar: avatar2,
+      name: "Vikrant T.",
+      title: "Happy Customer",
       quote:
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+        "Reliable and efficient service. The perfect solution for our identification needs.",
     },
     {
-      avatar: "https://randomuser.me/api/portraits/men/86.jpg",
-      name: "Micheal worin",
-      title: "Product designer",
+      avatar: avatar3,
+      name: "Rakesh M.",
+      title: "Happy Customer",
       quote:
-        "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain.",
+        "Exceptional products and excellent customer support. Highly recommended!",
     },
   ];
 
@@ -62,7 +65,7 @@ export default () => {
                   <div className="flex items-center gap-x-4 p-4 mt-6 bg-[#FFE1E0]">
                     <img
                       src={item.avatar}
-                      className="w-16 h-16 rounded-full border-2 border-[#5E0000]"
+                      className="w-16 h-16 rounded-full border-2 border-[#5E0000] object-cover"
                     />
                     <div>
                       <span className="block text-[#5E0000] font-semibold">

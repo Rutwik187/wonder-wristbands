@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProductDesc from "./components/ProductDesc";
 import ScrollToTop from "./ScrollToTop";
+import AboutUs from "./pages/AboutUs";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product-desc/:productId" element={<ProductDesc />} />
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/blogs" element={<AllBlogs />} />
           <Route path="/blogs/:slug" element={<BlogPage />} />
         </Routes>
