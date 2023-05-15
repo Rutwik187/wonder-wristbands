@@ -36,7 +36,7 @@ const productsData = [
         images: [headCircumferenceTape1, headCircumferenceTape2, headCircumferenceTape3, headCircumferenceTape4]
     }, {
         productId: 3,
-        name: 'Tvek Wristbands',
+        name: 'Tyvek Wristbands',
         desc: 'Tyvek wristbands are a dependable and long-lasting option for occasions, hospitals, gatherings, crowd control, clubs, lounges, water parks, and theme parks. These waterproof, non-tearable wristbands from Paper Combines are made of Tyvek paper. There are ten different solid colors available, including blue, red, green, pink, and others. Additionally, you can add your favorite design or logo to these wristbands. The wristbands are available in solid colors and can have patterns or designs printed on them. These Tyvek wristbands are useful for a variety of things and are environmentally friendly.',
         images: [tyvek1, tyvek2, tyvek3, tyvek4]
     }
