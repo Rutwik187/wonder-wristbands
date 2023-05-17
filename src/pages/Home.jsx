@@ -9,6 +9,7 @@ import AboutUs from "../components/AboutUs";
 import Blogs from "../components/Blogs";
 
 import Products from "../components/Products";
+import Instagram from "../components/Instagram";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Products />
       <Blogs />
       <Testimonials />
+      <Instagram />
       <ContactUs />
     </div>
   );
