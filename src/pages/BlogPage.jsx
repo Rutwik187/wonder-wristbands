@@ -19,23 +19,19 @@ const BlogPage = () => {
   }, []);
   return (
     <>
-      {post ? (
-        <Loader />
-      ) : (
-        <>
-          <div>
-            <div className="container py-6 md:py-10">
-              <div className="mx-auto max-w-4xl">
-                <div className="">
-                  <h1 className="pt-5 font-body text-3xl font-semibold text-primary sm:text-3xl md:text-4xl xl:text-4xl">
-                    {post.title}
-                  </h1>
-                  {/* <img
+      <div>
+        <div className="container py-6 md:py-10">
+          <div className="mx-auto max-w-4xl">
+            <div className="">
+              <h1 className="pt-5 font-body text-3xl font-semibold text-primary sm:text-3xl md:text-4xl xl:text-4xl">
+                {post.title}
+              </h1>
+              {/* <img
                   className="bg-no-repeat bg-cover  col-span-full lg:col-span-4"
                   src={urlFor(post.mainImage).width(500).height(300).url()}
                   alt={post.title}
                 /> */}
-                  {/* <div className="flex items-center pt-5 md:pt-10">
+              {/* <div className="flex items-center pt-5 md:pt-10">
                   <div>
                     <img
                       src="/assets/img/blog-author.jpg"
@@ -52,24 +48,24 @@ const BlogPage = () => {
                     </span>
                   </div>
                 </div> */}
-                  <br />
-                  <span className="block pt-1 font-body text-xl  text-grey-30">
-                    {new Date(post.publishedAt).toDateString()}
-                  </span>
-                </div>
-                {/* <img
+              <br />
+              <span className="block pt-1 font-body text-xl  text-grey-30">
+                {new Date(post.publishedAt).toDateString()}
+              </span>
+            </div>
+            {/* <img
                 className="bg-no-repeat bg-cover  col-span-full lg:col-span-4"
                 src={urlFor(post.mainImage).url()}
                 alt={post.title}
               /> */}
-                <div className="prose max-w-none pt-8">
-                  <PortableText
-                    // Pass in block content straight from Sanity.io
-                    value={post.body}
-                    components={RichTextComponent}
-                  />
-                </div>
-                {/* <div className="mt-10 flex justify-between border-t border-lila py-12">
+            <div className="prose max-w-none pt-8">
+              <PortableText
+                // Pass in block content straight from Sanity.io
+                value={post.body}
+                components={RichTextComponent}
+              />
+            </div>
+            {/* <div className="mt-10 flex justify-between border-t border-lila py-12">
                 <a href="/" className="flex items-center">
                   <i className="bx bx-left-arrow-alt text-2xl text-primary"></i>
                   <span className="block pl-2 font-body text-lg font-bold uppercase text-primary md:pl-5">
@@ -121,36 +117,34 @@ const BlogPage = () => {
                   </div>
                 </div>
               </div> */}
-              </div>
-            </div>
           </div>
+        </div>
+      </div>
 
-          <div className="bg-primary">
-            <div className="container flex flex-col justify-between py-6 sm:flex-row">
-              <p className="text-center font-body text-white md:text-left">
-                © Copyright 2022. All right reserved, ATOM.
-              </p>
-              <div className="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
-                <a href="/">
-                  <i className="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
-                </a>
-                <a href="/" className="pl-4">
-                  <i className="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
-                </a>
-                <a href="/" className="pl-4">
-                  <i className="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
-                </a>
-                <a href="/" className="pl-4">
-                  <i className="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
-                </a>
-                <a href="/" className="pl-4">
-                  <i className="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
-                </a>
-              </div>
-            </div>
+      <div className="bg-primary">
+        <div className="container flex flex-col justify-between py-6 sm:flex-row">
+          <p className="text-center font-body text-white md:text-left">
+            © Copyright 2022. All right reserved, ATOM.
+          </p>
+          <div className="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
+            <a href="/">
+              <i className="bx bxl-facebook-square text-2xl text-white hover:text-yellow"></i>
+            </a>
+            <a href="/" className="pl-4">
+              <i className="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
+            </a>
+            <a href="/" className="pl-4">
+              <i className="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
+            </a>
+            <a href="/" className="pl-4">
+              <i className="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
+            </a>
+            <a href="/" className="pl-4">
+              <i className="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
+            </a>
           </div>
-        </>
-      )}
+        </div>
+      </div>
     </>
   );
 };
