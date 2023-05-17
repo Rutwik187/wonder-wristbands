@@ -4,7 +4,7 @@ import { PortableText } from "@portabletext/react";
 
 import { useParams } from "react-router-dom";
 import { RichTextComponent } from "../components/RichTextComponent";
-import Loader from "../components/loader";
+import Loader from "../components/Loader";
 
 const BlogPage = () => {
   const { slug } = useParams();

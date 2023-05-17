@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { urlFor, client } from "../client";
 import { Link } from "react-router-dom";
-import Loader from "../components/loader";
+import Loader from "../components/Loader";
 
 const AllBlogs = () => {
   const [posts, setPosts] = useState([]);
