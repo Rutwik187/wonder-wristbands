@@ -13,6 +13,10 @@ export default () => {
           commitment to customer satisfaction, trust us to help you identify
           yourself in style.
         </p>
+        <br />
+        <p className="leading-relaxed mt-2 text-[15px]">
+          267, Shaniwar Peth, Nilesh Appt. Opp omkareshwar Temple. Pune 411030
+        </p>
       </div>
       <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
         <li className=" hover:text-[#5E0000]">
