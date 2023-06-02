@@ -3,6 +3,9 @@ import "./productDescStyles.css";
 import productsData from "../data";
 import { useParams } from "react-router-dom";
 
+import mailIcon from "../assets/gmail.png";
+import whatsAppIcon from "../assets/whatsapp.png";
+
 const ProductDetails = () => {
   const { productId } = useParams();
   const [index, setIndex] = useState(0);
@@ -39,12 +42,44 @@ const ProductDetails = () => {
             </h1>
 
             <p>{product.desc}</p>
-            <a
-              href="javascript:void(0)"
-              className="w-fit my-2 py-2 px-4 text-center text-white font-medium bg-[#FF6B66] duration-150 hover:bg-[#FE5650] active:bg-[#FF0800] rounded-lg shadow-lg hover:shadow-none"
-            >
-              Buy Now
-            </a>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="whatsapp://send?phone=0000000000"
+                className="flex gap-2 items-center justify-center border-yellow-700 border-2 w-fit p-2 rounded-lg shadow-lg shadow-red-500/40"
+              >
+                <img
+                  style={{
+                    width: "35px",
+                    height: "35px",
+                    padding: "3px",
+                  }}
+                  src={whatsAppIcon}
+                  alt=""
+                />
+                <h3 className="text-[#5E0000] text-1xl font-semibold sm:text-xl">
+                  Contact Us
+                </h3>
+              </a>
+
+              <a
+                target="_blank"
+                href="mailto:rutwikshinde34@gmail.com"
+                className="flex gap-2 items-center justify-center border-yellow-700 border-2 w-fit p-2 rounded-lg shadow-lg shadow-red-500/40"
+              >
+                <img
+                  style={{
+                    width: "35px",
+                    height: "35px",
+                    padding: "3px",
+                  }}
+                  src={mailIcon}
+                  alt=""
+                />
+                <h3 className="text-[#5E0000] text-1xl font-semibold sm:text-xl">
+                  Contact Us
+                </h3>
+              </a>
+            </div>
           </div>
         </div>
       </div>

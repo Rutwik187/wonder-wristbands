@@ -33,11 +33,6 @@ export default () => {
           <h3 className="text-[#5E0000] text-3xl font-semibold sm:text-4xl">
             Hear from our customers
           </h3>
-          <p className="mt-3 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est
-            hendrerit, porta nunc vitae, gravida justo. Nunc fermentum magna
-            lorem, euismod volutpat arcu volutpat et.
-          </p>
         </div>
         <div className="mt-12">
           <ul className="grid items-center gap-6 sm:grid-cols-2 lg:grid-cols-3">

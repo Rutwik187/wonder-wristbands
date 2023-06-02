@@ -100,12 +100,12 @@ export default function Navbar() {
                       Contact Us
                     </NavHashLink>
 
-                    <Link
-                      to="/"
+                    <NavHashLink
+                      to="/#products"
                       className="block py-2 px-4 text-center text-white font-medium bg-[#FF6B66] duration-150 hover:bg-[#FE5650] active:bg-[#FF0800] rounded-lg shadow-lg hover:shadow-none"
                     >
                       Buy Now
-                    </Link>
+                    </NavHashLink>
                   </div>
                 </div>
               </nav>
