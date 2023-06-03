@@ -67,7 +67,7 @@ export default () => {
         <div className="mt-6 sm:mt-0">
           <ul className="flex items-center space-x-4">
             <li className="w-15 h-15 border rounded-full flex items-center justify-center">
-              <a href="https://instagram.com/won.derwristband?igshid=ZGUzMzM3NWJiOQ">
+              <a href="https://instagram.com/wonder.wristband?igshid=MzRlODBiNWFlZA==">
                 <svg
                   class="svg-icon w-10 h-10 text-red-600"
                   viewBox="0 0 20 20"
