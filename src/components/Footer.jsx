@@ -93,78 +93,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
-            <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900">Our Products</p>
-
-              <nav aria-label="Footer Services Nav" className="mt-8">
-                <ul className="space-y-4 text-sm">
-                  <NavbarDropdown />
-
-                  <li>
-                    <Link
-                      to="/ganesh-murti"
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                    >
-                      Ganesh Murti
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/faral"
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                    >
-                      Diwali Faral
-                    </Link>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-
-            <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900">Helpful Links</p>
-
-              <nav aria-label="Footer Helpful Nav" className="mt-8">
-                <ul className="space-y-4 text-sm">
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                      href="/"
-                    >
-                      Home
-                    </a>
-                  </li>
-
-                  <li>
-                    <Link
-                      to="/about-us"
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                    >
-                      About Us
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      to="/blogs"
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                    >
-                      Blogs
-                    </Link>
-                  </li>
-
-                  <li>
-                    <NavHashLink
-                      to="/#contact-us"
-                      className="text-gray-700 transition hover:text-gray-700/75"
-                    >
-                      Contact-Us
-                    </NavHashLink>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-
+          <div className="">
             <div className="text-center sm:text-left">
               <p className="text-lg font-medium text-gray-900">Contact Us</p>
 
