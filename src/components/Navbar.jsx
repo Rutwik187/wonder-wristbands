@@ -171,13 +171,13 @@ export default function Navbar() {
                       >
                         Blogs
                       </Link>
-                      <Link
-                        to="/"
+                      <NavHashLink
+                        to="/#contact-us"
                         className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
                         aria-current="page"
                       >
                         Contact-Us
-                      </Link>
+                      </NavHashLink>
                       <Link
                         to="/"
                         className="bg-textColorYellow hover:bg-yellow-400 px-4 border border-yellow-700 block py-2 pl-3 pr-4 text-black  rounded  "

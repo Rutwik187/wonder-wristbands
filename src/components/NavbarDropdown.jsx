@@ -23,7 +23,7 @@ const NavbarDropdown = () => {
             <Menu.Item key={index}>
               <Link
                 to={`product-desc/${item.productId}`}
-                className="inline-flex py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
+                className="inline-flex py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0  hover:bg-[#5e0000] hover:text-white"
               >
                 {item.name}
               </Link>
