@@ -54,8 +54,8 @@ const Footer = () => {
           </ul>
         </nav>
       </div>
-      <div className="mx md:m-0 m-auto max-w-screen-xl px-4  pb-6 sm:px-6 lg:px-8 ">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div className="  m-auto max-w-screen-xl px-4  pb-6 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <div>
             <img
               className="w-32  xl:m-0 m-auto flex justify-center text-textColorYellow sm:justify-start"
@@ -64,7 +64,8 @@ const Footer = () => {
             />
 
             <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
-              Desai Mangoes - Naturally ripened best quality mangoes.
+              Wonder Wristbands: Discover our range of customizable, durable and
+              waterproof wristbands for all your identification needs.
             </p>
 
             <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
