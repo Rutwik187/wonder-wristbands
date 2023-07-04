@@ -23,6 +23,8 @@
   flex-wrap: wrap;
   gap: 1.3rem;
   margin-top: 20px;
+  align-items: center;
+  /* justify-content: center; */
 }
 .small-image {
   border-radius: 8px;

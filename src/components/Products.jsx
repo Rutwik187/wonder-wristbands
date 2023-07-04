@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import productsData from "../data";
 
+import { urlFor, client } from "../client";
+
 const Products = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const query = `*[_type == "products"]`;
+
+    client.fetch(query).then((data) => {
+      setProducts(data);
+    });
+  }, []);
   return (
     <section className="py-14" id="products">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
@@ -13,7 +24,7 @@ const Products = () => {
           <p className="mt-3">Experience the best, every time.</p>
         </div>
         <div className="flex flex-wrap gap-6 align-middle justify-around">
-          {productsData.map((item, index) => (
+          {products.map((item, index) => (
             <div key={index}>
               <div class="relative mt-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md">
                 <a
@@ -22,12 +33,9 @@ const Products = () => {
                 >
                   <img
                     class="object-cover"
-                    src={item.images[0]}
+                    src={urlFor(item.mainImage).url()}
                     alt="product image"
                   />
-                  {/* <span class="absolute top-0 left-0 m-2 rounded-full bg-black px-2 text-center text-sm font-medium text-white">
-                39% OFF
-              </span> */}
                 </a>
                 <div class="mt-4 px-5 pb-5">
                   <a href="#">
@@ -37,7 +45,14 @@ const Products = () => {
                   </a>
                   <div class="mt-2 mb-5 flex items-center justify-between"></div>
                   <Link
-                    to={`/product-desc/${index}`}
+                    to={`/${item.slug.current}/${encodeURIComponent(
+                      JSON.stringify([
+                        item.mainImage,
+                        item.secondImage,
+                        item.thirdImage,
+                        item.forthImage,
+                      ])
+                    )}`}
                     class="flex items-center justify-center  px-5 py-2.5 text-center text-sm font-medium   text-white bg-[#FF6B66] duration-150 hover:bg-[#FE5650] active:bg-[#FF0800] rounded-lg shadow-lg hover:shadow-none"
                   >
                     <svg

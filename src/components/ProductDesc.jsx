@@ -1,47 +1,71 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./productDescStyles.css";
 import productsData from "../data";
 import { useParams } from "react-router-dom";
 
+import { urlFor, client } from "../client";
+import { PortableText } from "@portabletext/react";
+
 import mailIcon from "../assets/gmail.png";
 import whatsAppIcon from "../assets/whatsapp.png";
 
+import { RichTextComponent } from "../components/RichTextComponent";
+
 const ProductDetails = () => {
-  const { productId } = useParams();
+  const { product_name } = useParams();
+  const { product_img } = useParams();
+
   const [index, setIndex] = useState(0);
-  const product = productsData[productId];
+
+  const [product, setProduct] = useState([]);
+
+  useEffect(() => {
+    const query = `*[slug.current == '${product_name}'][0]`;
+
+    client.fetch(query).then((data) => {
+      setProduct(data);
+    });
+  }, []);
+
+  const ImgArr = JSON.parse(decodeURIComponent([product_img]));
+
+  const [Image, SetImage] = useState(urlFor(ImgArr[0]).url());
+
+  console.log(ImgArr);
 
   return (
     <>
       <div className="max-w-screen-xl mx-auto px-0  text-gray-600 md:px-8">
-        <div className="product-detail-container">
-          <div>
+        <div className="product-detail-container flex-col md:flex-row">
+          <div className="flex-1">
             <div className="image-container">
-              <img
-                src={product.images[index]}
-                className="product-detail-image"
-              />
+              <img src={Image} className="product-detail-image" />
             </div>
             <div className="small-images-container">
-              {product.images.map((item, i) => (
+              {ImgArr?.map((item, i) => (
                 <img
+                  className="small-image hover:scale-110"
+                  src={urlFor(item).url()}
                   key={i}
-                  src={item}
-                  className={
-                    i === index ? "small-image selected-image" : "small-image"
-                  }
-                  onMouseEnter={() => setIndex(i)}
+                  onClick={() => SetImage(urlFor(item).url())}
+                  alt="Images"
                 />
               ))}
             </div>
           </div>
 
-          <div className="product-detail-desc flex flex-col gap-4">
+          <div className="product-detail-desc flex flex-col gap-4 flex-1">
             <h1 className="text-[#5E0000] text-3xl font-semibold sm:text-4xl">
               {product.name}
             </h1>
 
-            <p>{product.desc}</p>
+            <p>
+              {" "}
+              <PortableText
+                value={product.body}
+                components={RichTextComponent}
+              />
+            </p>
             <div className="flex flex-wrap gap-3">
               <a
                 href="whatsapp://send?phone=0000000000"
@@ -63,7 +87,7 @@ const ProductDetails = () => {
 
               <a
                 target="_blank"
-                href="mailto:rutwikshinde34@gmail.com"
+                href="mailto:wonderwristband@gmail.com"
                 className="flex gap-2 items-center justify-center border-yellow-700 border-2 w-fit p-2 rounded-lg shadow-lg shadow-red-500/40"
               >
                 <img

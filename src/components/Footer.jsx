@@ -7,8 +7,6 @@ const Footer = () => {
   return (
     <footer aria-label="Site Footer">
       <div className="text-center sm:text-left  flex-col md:flex gap-5 items-center justify-center my-8">
-        <p className="text-lg font-medium text-gray-900">Our Locations</p>
-
         <nav aria-label="Footer About Nav">
           <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
             <li className=" hover:text-[#5E0000]">
