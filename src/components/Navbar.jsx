@@ -70,7 +70,7 @@ export default function Navbar() {
                   <div className="flex flex-row items-center space-x-8">
                     <Link
                       to="/"
-                      className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0"
+                      className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent  md:p-0 hover:text-[#ff6b66]"
                       aria-current="page"
                     >
                       Home
@@ -78,7 +78,7 @@ export default function Navbar() {
                     <NavbarDropdown />
                     <Link
                       to="/about-us"
-                      className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
+                      className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent hover:text-[#ff6b66] md:p-0 "
                       aria-current="page"
                     >
                       About-Us
@@ -86,7 +86,7 @@ export default function Navbar() {
 
                     <Link
                       to="/blogs"
-                      className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
+                      className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent hover:text-[#ff6b66] md:p-0 "
                       aria-current="page"
                     >
                       Blogs
@@ -94,7 +94,7 @@ export default function Navbar() {
                     <NavHashLink
                       smooth
                       to="/#contact-us"
-                      className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
+                      className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent hover:text-[#ff6b66] md:p-0 "
                       aria-current="page"
                     >
                       Contact Us
@@ -150,7 +150,7 @@ export default function Navbar() {
                     <div className="flex flex-col px-2 pt-2 pb-2 space-y-5">
                       <Link
                         to="/"
-                        className="block py-2 pl-3 pr-4 text-black  rounded  md:hover:text-textColorYellow md:p-0"
+                        className="block py-2 pl-3 pr-4 text-black  rounded   md:p-0"
                         aria-current="page"
                       >
                         Home

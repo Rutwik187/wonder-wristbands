@@ -21,7 +21,7 @@ const NavbarDropdown = () => {
   }, []);
   return (
     <Menu as="div" className="relative">
-      <Menu.Button className="inline-flex py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 ">
+      <Menu.Button className="inline-flex py-2 pl-3 pr-4 text-black  rounded md:bg-transparent hover:text-[#ff6b66] md:p-0 ">
         Products
         <AiOutlineCaretDown className="ml-2 h-5 w-5" />
       </Menu.Button>

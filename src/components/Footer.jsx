@@ -117,7 +117,7 @@ const Footer = () => {
                       />
                     </svg>
 
-                    <span className="text-gray-700">
+                    <span className="text-gray-700 hover:text-[#ff6b66]">
                       <a href="mailto:wonderwristband@gmail.com">
                         wonderwristband@gmail.com
                       </a>
@@ -145,7 +145,7 @@ const Footer = () => {
                       />
                     </svg>
 
-                    <span className="text-gray-700">
+                    <span className="text-gray-700 hover:text-[#ff6b66]">
                       <a href="tel:7066104566">7066104566</a>
                     </span>
                     {/* <span className="text-gray-700">
@@ -187,7 +187,7 @@ const Footer = () => {
                       </g>
                     </svg>
 
-                    <span className="text-gray-700 text-start ">
+                    <span className="text-gray-700 text-start hover:text-[#ff6b66]">
                       267, Shaniwar Peth, Nilesh Appt. Opp omkareshwar
                       Temple. Pune 411030
                     </span>

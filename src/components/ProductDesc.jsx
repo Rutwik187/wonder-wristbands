@@ -68,7 +68,7 @@ const ProductDetails = () => {
             </p>
             <div className="flex flex-wrap gap-3">
               <a
-                href="whatsapp://send?phone=0000000000"
+                href="whatsapp://send?phone=7066104566"
                 className="flex gap-2 items-center justify-center border-yellow-700 border-2 w-fit p-2 rounded-lg shadow-lg shadow-red-500/40"
               >
                 <img
