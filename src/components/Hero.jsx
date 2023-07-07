@@ -22,7 +22,7 @@ export default () => {
       ),
     },
     {
-      name: "Over 50k+ bands sold",
+      name: "30 Million Bands Sold & Counting",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
