@@ -11,7 +11,7 @@ export default () => {
             Welcome to <span className="text-[#FF6B66]">Wonder WristBand</span>
           </h3>
           <p className="text-gray-500 leading-relaxed mt-2">
-            Welcome to Wonder Wristbands Prints, your one-stop shop for all your
+            Welcome to Wonder Wristbands, your one-stop shop for all your
             printing needs. We are a group of passionate, committed
             professionals with years of experience in the printing business. Our
             goal is to offer our customers high-quality printing services at a
