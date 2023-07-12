@@ -8,10 +8,10 @@ const AboutUs = () => {
         About Us
       </h1>
       <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl ">
-        Welcome to Wonder Wristbands Prints, your one-stop shop for all your
-        printing needs. We are a group of passionate, committed professionals
-        with years of experience in the printing business. Our goal is to offer
-        our customers high-quality printing services at a competitive price.
+        Welcome to Wonder Wristbands, your one-stop shop for all your printing
+        needs. We are a group of passionate, committed professionals with years
+        of experience in the printing business. Our goal is to offer our
+        customers high-quality printing services at a competitive price.
       </p>
 
       <div className="py-8">
@@ -23,21 +23,20 @@ const AboutUs = () => {
               </h1>
               <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl ">
                 services at a competitive price. Our founder, Mr. Jugalkishor
-                Malu, was a visionary who founded Wonder Wristbands Prints,
-                formerly known as Mangala Enterprises, in 1972. He saw the need
-                for dependable and high-quality envelopes for use in radiology
-                and general hospitals, and this motivated him to set the
-                groundwork for our production and printing business. We added
-                multicolor paper files and laminated files to our product lineup
-                within a short period of time.
+                Malu, was a visionary who founded Wonder Wristbands, formerly
+                known as Mangala Enterprises, in 1972. He saw the need for
+                dependable and high-quality envelopes for use in radiology and
+                general hospitals, and this motivated him to set the groundwork
+                for our production and printing business. We added multicolor
+                paper files and laminated files to our product lineup within a
+                short period of time.
               </p>
               <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl">
                 We made an investment in the technology needed to produce PP
                 files, PVC files, plastic files, or non-tearing files as the
                 demand for stronger, more durable files grew. Having been in
-                this industry for 48 years, Wonder Wristbands Prints is
-                delighted to be India's most dependable provider of hospital
-                stationary.
+                this industry for 48 years, Wonder Wristbands is delighted to be
+                India's most dependable provider of hospital stationary.
               </p>
             </div>
             <div className="lg:w-1/4 order-2">
@@ -99,8 +98,8 @@ const AboutUs = () => {
           Dedicated to Quality and Client Satisfaction
         </h1>
         <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl ">
-          At Wonder Wristbands Prints, we take great pleasure in our dedication
-          to quality and client satisfaction. In order to produce the greatest
+          At Wonder Wristbands, we take great pleasure in our dedication to
+          quality and client satisfaction. In order to produce the greatest
           products at the most competitive costs, we make use of innovative
           technology and feel out the market needs. We have made a name for
           ourselves in the packaging sector for both for-profit and nonprofit
