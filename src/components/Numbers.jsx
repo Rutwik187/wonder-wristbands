@@ -13,7 +13,7 @@ export default () => {
     },
     { start: "20000000", end: "30000000", title: "Bands Sold" },
 
-    { start: "10", end: "20", title: "Products" },
+    { start: "20", end: "28", title: "Products" },
   ];
 
   return (
