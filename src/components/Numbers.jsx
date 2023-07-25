@@ -11,8 +11,8 @@ export default () => {
       end: "3000",
       title: "Customers",
     },
-    { start: "90000", end: "1000000", title: "Bands Sold" },
-    { start: "20", end: "40", title: "States" },
+    { start: "20000000", end: "30000000", title: "Bands Sold" },
+
     { start: "10", end: "20", title: "Products" },
   ];
 
